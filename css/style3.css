@@ -1,0 +1,142 @@
+.fakeimg {
+    background: linear-gradient(
+                    to right bottom,
+                    #7ed56fce,
+                    #28b485c7);
+    background-size: cover;
+   
+    background-position: top;
+    
+}
+
+.bg{
+    background-image: linear-gradient(
+        to right bottom,
+        #f5f5f581,
+        #c0c0c0c7), 
+        url(../img/index_bg2.jpg);
+    background-size: cover;
+    background-position: top;
+    
+    
+   }
+.user-review{
+    background-image: linear-gradient(
+        to right bottom,
+        #7ed56fce,
+        #28b485c7);
+    border-radius: 10px;
+}
+
+
+.user-review-box{
+    padding: 3%;
+    background-color: white;
+    border-radius: 10px;
+    
+    
+}
+.search-specific-tour{
+
+    
+    
+    background-image: linear-gradient(
+        to right bottom,
+        #7ed56fce,
+        #28b485c7);
+    /*margin-top: 5%;*/
+    padding: 1%;
+    border-radius: 10px;
+
+}
+.title-specific-tour-div{
+    text-align: center;
+    padding-top: 1%; 
+    
+    text-transform: uppercase;
+}
+.card-left-margin{
+    margin-left: 1%;
+}
+
+@media only screen and (max-width: 574px) {
+    .card-left-margin {
+      margin-left: 0%;
+    }
+    
+  }
+  /*FLIP CARD*/
+
+  .flip-card {
+               
+    width: 100%;
+    height: 450px;
+    perspective: 1000px;
+   
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: all 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    
+    transform: rotateY(180deg);
+   
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background: #eee;
+    color: black;
+}
+
+.flip-card-back {
+    background: linear-gradient(
+                to right bottom,
+                #7ed56fce,
+                #28b485c7);
+    color: white;
+    transform: rotateY(180deg);
+}
+.back-card-custom{
+    margin-top: 140px;
+}
+@media only screen and (max-width: 1193px) {
+    .flip-card {   
+        width: 100%;
+        height: 400px;
+        perspective: 1000px;
+    }
+    
+}
+@media only screen and (max-width: 991px) {
+    .flip-card {   
+        width: 100%;
+        height: 350px;
+        perspective: 1000px;
+    }
+    
+}
+@media only screen and (max-width: 767px) {
+    .flip-card {   
+        width: 100%;
+        height:530px;
+        perspective: 1000px;
+    }
+    
+  }
+  /*FLIP CARD END*/

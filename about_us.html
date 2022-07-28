@@ -1,0 +1,135 @@
+<?php 
+
+    session_start();
+    include "isloggedUser.php";
+    include "db_connect.php";
+    $conn = mysqli_connect($servername,$username,$password,$dbname);
+    if(!$conn){
+        echo "Error in Connecting";
+    }
+    //echo $_REQUEST["tourid"];
+
+    if(isset($_POST['logout'])){
+        session_destroy();
+        header("Location:login.php");
+    }
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+        <!--<link rel="shortcut icon" type="image/png" href="img/favicon.png"> -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" >
+        <script src="js/bootstrap.bundle.min.js" ></script>
+        <script src="umd/popper.min.js" ></script>
+        <script src="js/bootstrap.min.js" ></script>
+        <link rel="stylesheet" href="css/style3.css">
+        <title>KING Tours and Travels</title>
+       
+        
+        </script>
+       <style>
+            .section_user_review{
+                background: rgba(247,247,247,0.3);
+                width:100%;
+                padding-bottom:20px;
+            }
+            .section_user_review_heading{
+                padding-top:20px;
+                text-decoration:underline;
+                text-decoration-color:red;
+                letter-spacing:7px;
+                transition: all .2s;
+            }
+            .section_user_review_heading:hover {
+                transform: skewY(2deg) skewX(15deg) scale(1.1);
+                text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.4); 
+            }
+            .custom_card_hover{
+                transition: .2s;
+            }
+            .custom_card_hover:hover{
+                
+                transform: translateY(-20px);
+            }
+       </style>
+    </head>
+    <body class="bg">
+<section class="sec">
+    <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"> <img heigth="10px" width="50px" src="logo-white.png" /> </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="h nav-item">
+                        <a class="nav-link" aria-current="page" href="index_user.php" >Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contact_us.html">Contact Us</a>
+                      </li>
+                     
+                      <li class="aa nav-item">
+                        <a class="nav-link active">About Us</a>
+                      </li>
+                      <li class="r nav-item">
+                        <a class="nav-link" href="user_review.php">Add Review</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex">
+                      
+                      <button class="btn btn-primary" type="submit">Logout</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+        </header>
+
+        <section class="mt-5" style="background: rgba(247,247,247,0.3)">
+            <div class="container" >
+                <div style="padding-top:20px;">
+                    <center><h3> About Us</h3></center>
+                </div>
+                <hr>
+                <div style="font-size: 18px;">
+                   <p>
+                    <b>‘KING Tours and Travels’</b>
+
+                    Since 1975,  <b>‘KING Tours and Travels’</b> has been focused on bringing our customers the best in esteem and quality travel game plans. We are enthusiastic about movement and sharing the world’s marvels on the relaxation travel side, and giving corporate explorers hello there contact administrations to encourage their business travel needs.
+                   </p>
+                   <p>
+                    We’re a worker-claimed travel organization secured by our qualities, trustworthiness, and commitment to client benefit.
+                   </p>
+                </div>
+
+                <div style="padding-bottom: 20px;"> </div>
+            </div> 
+
+
+        </section>
+        
+
+        
+
+        <footer class="footer fixed-bottom">
+           
+            <div class="mt-5 p-4 bg-dark text-white text-center" >
+                © 2020 Copyright:
+                <a class="text-white" href="https://dreamdevelopers.com/">dreamdevelopers.com</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+       
+
+    </section>
+    </body>
+    
+</html> 

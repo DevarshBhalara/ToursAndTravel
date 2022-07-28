@@ -1,0 +1,68 @@
+
+
+.text-box {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    
+    /*used to set center*/
+    text-align: center;
+    /*used set button in center*/ 
+}
+.container_custom{
+    width: 90%;
+    margin: 0 auto;
+    padding: 1;
+}
+.heading-primary {
+    color: #ffffff;
+    text-transform: uppercase;
+   
+}
+.heading-primary-sub {
+    display: block;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 24px; 
+    margin-right: 2%; 
+    margin-bottom: 5%;
+}
+.heading-primary-main {
+    
+    /*font-size: 80px;*/
+    font-weight: 100;
+    letter-spacing: 50px;
+}
+.btn_custom{
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 10rem;
+    font-size: 16px; 
+    background-color: white;
+    color: #777; 
+    margin-right: 4%;
+}
+.user-review{
+    margin-left: 1%;
+    margin-right: 1%;
+    position: relative;
+   
+    background-image: linear-gradient(
+        to right bottom,
+        #7ed56fce,
+        #28b485c7);
+    margin-top: 5%;
+   
+    border-radius: 10px;
+
+}
+.user-review-box{
+    padding: 3%;
+    background-color: white;
+    border-radius: 10px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    
+}
+/*FLIP CARD*/
